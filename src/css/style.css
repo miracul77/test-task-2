@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: orange;
+  padding: 20px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.pop_up {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.pop_up.active {
+  display: block;
+}
+
+.pop_up_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pop_up_body {
+  margin: auto;
+  width: 400px;
+  background-color: #fff;
+  border: 10px solid gray;
+  position: relative;
+  padding: 30px 10px 70px 40px;
+}
+
+.form {
+  margin-top: 15px;
+}
+
+.err {
+  outline: 1px solid red;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+::placeholder {
+  font-size: 10px;
+}
+
+.check {
+  margin: 7px 20px 3px 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 10px;
+}
+
+.form__text {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.pasport {
+  display: flex;
+}
+
+.pasport__item {
+  width: 140px;
+}
+
+.btnSend {
+  background-color: black;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btnClose {
+  background-color: #fff;
+  color: #000;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 10px;
+  border: 1px solid #000;
+  position: absolute;
+  cursor: pointer;
+  bottom: 70px;
+  left: 150px;
+}
+.pop_up_body input:focus {
+  outline: none;
+}
+
+.pop_up_close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: gray;
+}

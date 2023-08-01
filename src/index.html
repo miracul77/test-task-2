@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="button">
+      <a href="#" class="open_pop_up">Оставить заявку</a>
+    </div>
+    <div class="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <h2>Трансортные средства и водители</h2>
+          <form class="form">
+            <div>
+              <div class="form__text">Гос-номер</div>
+              <input
+                type="text"
+                name="carNumber"
+                class="check"
+                placeholder="Укажите го-номер"
+                data-rule="carNumber"
+              />
+              <div class="error-message"></div>
+            </div>
+            <div>
+              <div class="form__text">Трансортное средство</div>
+              <input
+                type="text"
+                class="check"
+                name="names"
+                placeholder="Трансортное средство"
+                data-rule="names"
+              />
+              <div class="error-message"></div>
+            </div>
+            <div>
+              <div class="form__text">
+                Ориентировочная дата прибытия к покупателю
+              </div>
+              <input
+                type="text"
+                class="check"
+                name="data"
+                placeholder="Дата*"
+                data-rule="data"
+              />
+              <div class="error-message"></div>
+            </div>
+            <h3>Данные о водителе</h3>
+            <div>
+              <div class="form__text">ФИО</div>
+              <input
+                type="text"
+                class="check"
+                name="names"
+                placeholder="Укажите ФИО водителя*"
+                data-rule="names"
+              />
+              <div class="error-message"></div>
+            </div>
+            <div>
+              <div class="form__text">Паспортные данные</div>
+              <div class="pasport">
+                <div>
+                  <input
+                    type="text"
+                    class="check pasport__item"
+                    name="spasport"
+                    placeholder="Серия"
+                    data-rule="spasport"
+                  />
+                  <div class="error-message"></div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="check pasport__item"
+                    name="npasport"
+                    placeholder="Номер"
+                    data-rule="npasport"
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="form__text">Кем выдан</div>
+              <input
+                type="text"
+                class="check"
+                name="names"
+                placeholder="Кем выдан"
+                data-rule="names"
+              />
+              <div class="error-message"></div>
+            </div>
+            <div>
+              <div class="form__text">Когда выдан</div>
+              <input
+                type="text"
+                class="check"
+                name="data"
+                placeholder="Когда выдан"
+                data-rule="data"
+              />
+              <div class="error-message"></div>
+            </div>
+              <button class="btnSend" type="submit">Отправить</button>
+            
+        </form>
+        <button class="btnClose">Отменить</button>
+          <div class="pop_up_close">&#10006</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
